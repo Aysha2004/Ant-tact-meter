@@ -47,22 +47,22 @@ cd ant-tact-meter
 For Software:
 
 # Screenshots 
-!["C:\Users\ASUS\Pictures\Screenshots\starting_page.png"]
- Landing page introducing Ant Tact Meter.
 
-!["C:\Users\ASUS\Pictures\Screenshots\choose_options.png"]
+ Landing page introducing Ant Tact Meter.
+ 
+
   Users select the analysis feature they want to perform.
 
-!["C:\Users\ASUS\Pictures\Screenshots\upload_ants_files.png"]
+
   Users upload images or videos of ants for analysis.
 
-!["C:\Users\ASUS\Pictures\Screenshots\ant_counter_page.png"]
+
   Displays the results, including ant count, funny summaries, and charts.
 
 
 ### Project Demo
 # Video
-!["C:\AYSHAS STUFFS\PROJECTS\a1\ant-tact.mp4"]
+ant-tact.mp4
 The demo shows how a user interacts with Ant Tact Meter: starting from the landing page, selecting an analysis feature, uploading an image or video of ants, and finally viewing the results. The app automatically counts the ants, provides a fun summary of their behavior, and displays charts showing activity or estimated food delivery time.
 
 
@@ -77,3 +77,4 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
