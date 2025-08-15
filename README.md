@@ -48,7 +48,7 @@ For Software:
 
 # Screenshots 
 - Landing page introducing Ant Tact Meter.
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/starting_page.png
+![image]https://github.com/Aysha2004/Ant-tact-meter/blob/main/starting_page.png
 
 
 - Users select the analysis feature they want to perform.
