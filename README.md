@@ -36,7 +36,7 @@ Not required — works entirely on any laptop or PC with a browser
 For Software:
 # Installation
 # Download or clone the project
-git clone [your repo link]
+git clone []
 cd ant-tact-meter
 
 # Run
