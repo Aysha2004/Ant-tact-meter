@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ANT TACT METER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('antsssss666666.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            padding: 40px;
+        }
+
+        /* Left Section - Privacy Content */
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            text-align: center;
+        }
+
+        /* Right Section - Brand Content */
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .privacy-section {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .privacy-text p {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 500;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .privacy-text p:nth-child(1) { animation-delay: 0.2s; }
+        .privacy-text p:nth-child(2) { animation-delay: 0.4s; }
+        .privacy-text p:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .agree-button {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border: none;
+            padding: 18px 45px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+            margin: 30px 0;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        .agree-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
+            background: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%);
+        }
+
+        .reassurance {
+            font-size: 16px;
+            color: #ffffff;
+            font-style: italic;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 1s;
+            margin-bottom: 0;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Brand Section */
+        .brand-section {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .brand-text {
+            position: relative;
+            filter: none !important;
+            text-align: center;
+        }
+
+        .brand-text h1 {
+            font-size: 76px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 4px;
+            line-height: 1.2;
+            text-shadow:
+                0 0 30px rgba(255, 255, 255, 0.9),
+                0 12px 25px rgba(204, 85, 42, 0.4),
+                0 18px 35px rgba(198, 118, 24, 0.3),
+                3px 3px 0px #333333,
+                6px 6px 0px #666666,
+                9px 9px 15px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .brand-text .word {
+            display: block;
+            margin-bottom: 15px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateX(50px);
+            animation: slideInRight 0.8s ease forwards;
+        }
+
+        .brand-text .word:nth-child(1) {
+            animation-delay: 1.2s;
+            color: #ffffff;
+        }
+        .brand-text .word:nth-child(2) {
+            animation-delay: 1.4s;
+            color: #ffffff;
+        }
+        .brand-text .word:nth-child(3) {
+            animation-delay: 1.6s;
+            color: #ffffff;
+        }
+
+        @keyframes slideInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .brand-text .word{
+            transform: scale(1.1);
+            text-shadow:
+                0 0 40px rgba(172, 163, 163, 0.694),
+                0 15px 30px rgba(246, 92, 35, 0.6),
+                0 20px 45px rgba(198, 118, 24, 0.4),
+                3px 3px 0px #f36004,
+                6px 6px 0px #f15608,
+                9px 9px 20px rgba(0, 0, 0, 0.9);
+        }
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-panel, .right-panel {
+                flex: none;
+                height: 50vh;
+            }
+
+            .left-panel {
+                padding: 20px;
+            }
+
+            .privacy-text p {
+                font-size: 20px;
+            }
+
+            .privacy-text p:first-child {
+                font-size: 24px;
+            }
+
+            .brand-text h1 {
+                font-size: 36px;
+            }
+
+            .agree-button {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .privacy-text p {
+                font-size: 18px;
+            }
+
+            .privacy-text p:first-child {
+                font-size: 22px;
+            }
+
+            .brand-text h1 {
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+
+            .left-panel {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section - Privacy Agreement -->
+        <div class="left-section">
+            <div class="privacy-section">
+                <div class="privacy-text">
+                    <p>You're almost there…</p>
+                    <p>To continue, please agree to our terms of service</p>
+                    <p>and acknowledge our privacy policy</p>
+                </div>
+                <button class="agree-button" onclick="handleAgree()">I Agree</button>
+                <p class="reassurance">Your files are safe with us</p>
+            </div>
+        </div>
+
+        <!-- Right Section - Brand -->
+        <div class="right-section">
+            <div class="brand-section">
+                <div class="brand-text">
+                    <h1>
+                        <span class="word">ANT</span>
+                        <span class="word">TACT</span>
+                        <span class="word">METER</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleAgree() {
+            // Redirect to dashboard page
+            window.location.href = 'dashboard.html';
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.querySelector('.agree-button');
+            const words = document.querySelectorAll('.word');
+            
+            // Animate brand text on load
+            words.forEach((word, index) => {
+                word.style.opacity = '0';
+                word.style.transform = 'translateY(20px)';
+                word.style.transition = 'all 0.2s ease';
+
+                setTimeout(() => {
+                    word.style.opacity = '1';
+                    word.style.transform = 'translateY(0)';
+                }, index * 50 + 100);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANT TACT METER - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            height: 100vh;
+            overflow-x: hidden;
+            background-image: url('antsssss666666.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            min-height: 100vh;
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: left;
+            opacity: 0;
+            animation: fadeInLeft 1s ease forwards;
+        }
+
+        .header h1 {
+            font-size: 84px;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 6px;
+            line-height: 1.1;
+            text-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.6),
+                0 8px 30px rgba(204, 85, 42, 0.3);
+            margin: 0;
+        }
+
+        .header .word {
+            display: block;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .header .word:nth-child(1) { animation-delay: 0s; }
+        .header .word:nth-child(2) { animation-delay: 0.5s; }
+        .header .word:nth-child(3) { animation-delay: 1s; }
+
+        .header .word:hover {
+            transform: translateX(10px) scale(1.05);
+            color: #ff6b35;
+            animation-play-state: paused;
+        }
+
+        /* Make the entire title orange on hover */
+        /* Only the hovered word turns orange */
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                text-shadow:
+                    0 4px 20px rgba(0, 0, 0, 0.6),
+                    0 8px 30px rgba(204, 85, 42, 0.3);
+            }
+            50% {
+                transform: scale(1.02);
+                text-shadow:
+                    0 4px 20px rgba(0, 0, 0, 0.6),
+                    0 8px 30px rgba(204, 85, 42, 0.5),
+                    0 0 40px rgba(255, 107, 53, 0.4);
+            }
+        }
+
+        /* Right Section - Features */
+        .features-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .features-title {
+            font-size: 36px;
+            font-weight: 400;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-style: italic;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
+            text-align: left;
+            align-self: flex-start;
+            opacity: 0;
+            animation: fadeInLeft 0.8s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .features-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .feature-box {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 107, 53, 0.1) 100%);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-left: 5px solid #ff6b35;
+            border-radius: 15px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(50px);
+            animation: slideInRight 0.6s ease forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-box:nth-child(1) { animation-delay: 0.1s; }
+        .feature-box:nth-child(2) { animation-delay: 0.2s; }
+        .feature-box:nth-child(3) { animation-delay: 0.3s; }
+        .feature-box:nth-child(4) { animation-delay: 0.4s; }
+
+        .feature-box:hover {
+            transform: translateX(10px);
+            background: linear-gradient(90deg, rgba(255, 107, 53, 0.2) 0%, rgba(247, 147, 30, 0.2) 100%);
+            border-left: 5px solid #f7931e;
+            box-shadow:
+                0 10px 30px rgba(255, 107, 53, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-number {
+            font-size: 36px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 60px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: all 0.3s ease;
+            order: 1;
+        }
+
+        .feature-box:hover .feature-number {
+            transform: scale(1.1);
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            line-height: 1.4;
+            transition: all 0.3s ease;
+            flex: 1;
+            order: 2;
+            text-align: left;
+        }
+
+        .feature-box:hover .feature-title {
+            color: #ffffff;
+            text-shadow:
+                2px 2px 6px rgba(0, 0, 0, 0.8),
+                0 0 15px rgba(255, 107, 53, 0.5);
+        }
+
+        /* Quick Access Button */
+        .quick-access {
+            margin-top: 40px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 1.5s;
+        }
+
+        .quick-access-button {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .quick-access-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+            background: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%);
+        }
+
+        .quick-access-text {
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: 15px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+            opacity: 0.9;
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+
+
+
+
+
+
+        /* Animations */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 40px;
+            }
+
+            .header h1 {
+                font-size: 56px;
+                letter-spacing: 3px;
+                text-align: center;
+            }
+
+            .features-section {
+                align-items: center;
+                max-width: 100%;
+            }
+
+            .features-title {
+                font-size: 28px;
+                text-align: left;
+                margin-bottom: 25px;
+                align-self: flex-start;
+            }
+
+            .features-container {
+                gap: 15px;
+            }
+
+            .feature-box {
+                padding: 20px 25px;
+            }
+
+            .feature-number {
+                font-size: 32px;
+                margin-right: 15px;
+                min-width: 50px;
+            }
+
+            .feature-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section - Header -->
+        <div class="header">
+            <h1>
+                <span class="word">ANT</span>
+                <span class="word">TACT</span>
+                <span class="word">METER</span>
+            </h1>
+        </div>
+
+        <!-- Right Section - Features -->
+        <div class="features-section">
+            <h2 class="features-title">Select Your Analysis</h2>
+            <div class="features-container">
+                <div class="feature-box" onclick="selectFeature(1)">
+                    <span class="feature-number">1️⃣</span>
+                    <div class="feature-title">Count the number of Ants</div>
+                </div>
+
+                <div class="feature-box" onclick="selectFeature(2)">
+                    <span class="feature-number">2️⃣</span>
+                    <div class="feature-title">Predict Ants' Exact Action</div>
+                </div>
+
+                <div class="feature-box" onclick="selectFeature(3)">
+                    <span class="feature-number">3️⃣</span>
+                    <div class="feature-title">Measure Food Delivery Time</div>
+                </div>
+
+                <div class="feature-box" onclick="selectFeature(4)">
+                    <span class="feature-number">4️⃣</span>
+                    <div class="feature-title">Track Ant Interactions</div>
+                </div>
+            </div>
+            <div class="quick-access">
+                <button class="quick-access-button" onclick="tryAntCounterNow()">Try Ant Counter Now</button>
+                <p class="quick-access-text">Click the button to start counting ants!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectFeature(featureNumber) {
+            const features = {
+                1: "Count the number of Ants",
+                2: "Predict Ants' Exact Action",
+                3: "Measure Food Delivery Time",
+                4: "Track Ant Interactions"
+            };
+
+            if (featureNumber === 1) {
+                // Navigate to the ant counting functionality
+                window.location.href = '../backend/index.html';
+            } else {
+                alert(`Feature: ${features[featureNumber]} 🐜\n\nThis feature is coming soon! For now, try the ant counting feature.`);
+            }
+        }
+
+        function tryAntCounterNow() {
+            window.location.href = '../backend/index.html';
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to header
+            const header = document.querySelector('.header h1');
+            header.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            header.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
