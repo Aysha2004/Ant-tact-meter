@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANT TACT METER - Ant Counting Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page Section -->
+    <section id="landing-page" class="page active">
+        <div class="container">
+            <div class="main-content">
+                <!-- Header Section -->
+                <div class="header">
+                    <h1>
+                        <span class="word">ANT</span>
+                        <span class="word">TACT</span>
+                        <span class="word">METER</span>
+                    </h1>
+                </div>
+                
+                <div class="welcome-text">
+                    Welcome to the Ultimate Ant Counting Experience!
+                </div>
+                
+                <!-- Description Section -->
+                <div class="description">
+                    <h2>🐜 Count Ants with AI-Powered Precision</h2>
+                    <p>Upload images or videos of ants and let our advanced AI automatically detect and count them. Get detailed analysis, activity levels, and fascinating insights about your ant colonies.</p>
+                </div>
+                
+                <!-- Features Section -->
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🔍</span>
+                        <span>AI-Powered Detection</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📊</span>
+                        <span>Detailed Analytics</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎥</span>
+                        <span>Image & Video Support</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📱</span>
+                        <span>Mobile Friendly</span>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="showPage('dashboard')">
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPage('privacy')">
+                        Privacy Policy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="page">
+        <div class="container">
+            <div class="dashboard-content">
+                <div class="header">
+                    <h1>
+                        <span class="word">ANT</span>
+                        <span class="word">TACT</span>
+                        <span class="word">METER</span>
+                    </h1>
+                </div>
+                
+                <div class="features-section">
+                    <h2 class="features-title">Choose Your Feature</h2>
+                    <div class="features-container">
+                        <div class="feature-box" onclick="showPage('ant-counter')">
+                            <span class="feature-number">1️⃣</span>
+                            <span class="feature-title">Count the number of Ants</span>
+                        </div>
+                        <div class="feature-box" onclick="showPage('ant-counter')">
+                            <span class="feature-number">2️⃣</span>
+                            <span class="feature-title">Analyze Ant Behavior</span>
+                        </div>
+                        <div class="feature-box" onclick="showPage('ant-counter')">
+                            <span class="feature-number">3️⃣</span>
+                            <span class="feature-title">Track Ant Activity</span>
+                        </div>
+                        <div class="feature-box" onclick="showPage('ant-counter')">
+                            <span class="feature-number">4️⃣</span>
+                            <span class="feature-title">Generate Reports</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary back-btn" onclick="showPage('landing-page')">
+                    ← Back to Home
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ant Counter Section -->
+    <section id="ant-counter" class="page">
+        <div class="container">
+            <div class="ant-counter-content">
+                <div class="header">
+                    <h1>
+                        <span class="word">ANT</span>
+                        <span class="word">COUNTER</span>
+                    </h1>
+                </div>
+                
+                <div class="ant-analysis">
+                    <h3>Upload Your Ant Image or Video</h3>
+                    <input type="file" id="fileInput" accept="image/*,video/*" onchange="handleFileUpload(event)">
+                    <div id="fileInfo" class="file-info"></div>
+                    
+                    <div id="results" class="results" style="display: none;">
+                        <h4>Analysis Results</h4>
+                        <div id="antCount" class="result-item"></div>
+                        <div id="activityLevel" class="result-item"></div>
+                        <div id="insights" class="result-item"></div>
+                        <div id="chart" class="chart-container"></div>
+                    </div>
+                    
+                    <div id="loading" class="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Analyzing your file...</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary back-btn" onclick="showPage('dashboard')">
+                    ← Back to Dashboard
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="page">
+        <div class="container">
+            <div class="privacy-content">
+                <h1>Privacy Policy</h1>
+                <div class="privacy-text">
+                    <h2>ANT TACT METER Privacy Policy</h2>
+                    <p>This application processes your images and videos locally on your device. No data is sent to external servers unless you explicitly enable AI-powered detection features.</p>
+                    
+                    <h3>Data Collection</h3>
+                    <ul>
+                        <li>Files are processed locally on your device</li>
+                        <li>No personal information is collected</li>
+                        <li>Analysis results are not stored permanently</li>
+                    </ul>
+                    
+                    <h3>AI Features (Optional)</h3>
+                    <p>If you enable AI-powered detection, your files may be sent to Google Gemini AI for analysis. This is completely optional and requires your explicit consent.</p>
+                    
+                    <h3>Contact</h3>
+                    <p>For questions about this privacy policy, please contact us through the application.</p>
+                </div>
+                
+                <button class="btn btn-secondary back-btn" onclick="showPage('landing-page')">
+                    ← Back to Home
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
