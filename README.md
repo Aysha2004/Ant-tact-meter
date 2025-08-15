@@ -47,17 +47,21 @@ cd ant-tact-meter
 For Software:
 
 # Screenshots 
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/starting_page.png
 - Landing page introducing Ant Tact Meter.
- 
+https://github.com/Aysha2004/Ant-tact-meter/blob/main/starting_page.png
+
+
+- Users select the analysis feature they want to perform.
 https://github.com/Aysha2004/Ant-tact-meter/blob/main/choose_options.png
- - Users select the analysis feature they want to perform.
 
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/upload_ants_files.png
+ 
  - Users upload images or videos of ants for analysis.
+https://github.com/Aysha2004/Ant-tact-meter/blob/main/upload_ants_files.png
 
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant_counter_page.png
+
  - Displays the results, including ant count, funny summaries, and charts.
+https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant_counter_page.png
+
 
 
 ### Project Demo
