@@ -36,7 +36,7 @@ Not required — works entirely on any laptop or PC with a browser
 For Software:
 # Installation
 No installation needed-just open in a browser.
-git clone https://github.com/Aysha2004/Ant-tact-meter
+git clone https://github.com/Aysha2004/Ant-tact-meter.git
 
 
 # Run
