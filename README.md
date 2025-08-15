@@ -53,16 +53,16 @@ For Software:
 
   Users select the analysis feature they want to perform.
 
-upload_
+
   Users upload images or videos of ants for analysis.
 
-ant_counter_page.png
+
   Displays the results, including ant count, funny summaries, and charts.
 
 
 ### Project Demo
 # Video
-ant-tact.mp4
+https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant-tact.mp4
 The demo shows how a user interacts with Ant Tact Meter: starting from the landing page, selecting an analysis feature, uploading an image or video of ants, and finally viewing the results. The app automatically counts the ants, provides a fun summary of their behavior, and displays charts showing activity or estimated food delivery time.
 
 
@@ -77,5 +77,6 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
 
 
