@@ -1,63 +1,79 @@
-[Ant Tact Meter] 🎯
-Basic Details
-Team Name: Tiny Titans
-Team Members
-Team Lead: Anjana - TocH
-Member 2: Aysha Sulthana - TocH
-Project Description
-A web application that lets users upload images or videos of ants to automatically count ants, estimate their average food delivery time, and provide fun insights about their behavior.
+<img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
-The Problem (that doesn't exist)
-Nobody actually tracks how ants deliver food or interact in colonies manually — but wouldn’t it be fun to know?
 
-The Solution (that nobody asked for)
-We built Ant Tact Meter! Users upload ant images or videos, and the app:
-- Counts ants automatically
-- Gives a funny summary of what the ants are doing
-- Estimates average food delivery time in a colony
-All results are visualized with charts for maximum “scientific” effect.
+# Ant-Tact Meter 🎯
 
-Technical Details
-Technologies/Components Used
+
+## Basic Details
+### Team Name: BitVerse
+
+
+### Team Members
+- Team Lead: Anjana C - TocH
+- Member 2: Aysha Sulthana - TocH
+
+### Project Description
+Ant Tact Meter is a fun web application that lets users upload images or videos of ants to automatically count them, estimate their average food delivery time, and provide amusing insights into their behavior. It uses JavaScript, Chart.js, and an AI/API for detection, displaying results with interactive charts and summaries.
+
+### The Problem (that doesn't exist)
+Humans never really track how ants deliver food or interact in colonies — but wouldn’t it be hilarious to know who’s slacking and who’s hustling in the ant world?
+
+### The Solution (that nobody asked for)
+We built Ant Tact Meter! Users upload ant images or videos, and our app magically counts the ants, guesses what they’re doing, and estimates how long it takes them to deliver food — all while showing colorful charts and amusing summaries for maximum entertainment.
+
+## Technical Details
+### Technologies/Components Used
 For Software:
-
 Languages used: HTML, CSS, JavaScript
-Frameworks used: Chart.js, Tailwind CSS (optional), TensorFlow.js / OpenAI API
-Libraries used: Chart.js, TensorFlow.js
-Tools used: VS Code, Browser
+Frameworks used: None mandatory, optionally Tailwind CSS for styling
+Libraries used: Chart.js, TensorFlow.js / OpenAI API
+Tools used: VS Code, Web Browser
+
 For Hardware:
+Not required — works entirely on any laptop or PC with a browser
 
-Not required — works fully on any laptop or PC with a browser
-
-Implementation
+### Implementation
 For Software:
-
-Installation
-# Simply download the project folder
+# Installation
+# Download or clone the project
 git clone [your repo link]
 cd ant-tact-meter
 
-Run
-# Open index.html in a browser
-# Or serve with live-server in VS Code
+# Run
+# Open the index.html file in any web browser
+# Or use live-server in VS Code for a local development server
 
-Project Documentation
+### Project Documentation
 For Software:
 
-Screenshots (Add at least 3)
-![Screenshot1](screenshot1.png) Add caption explaining what this shows
+# Screenshots 
+!["C:\Users\ASUS\Pictures\Screenshots\starting_page.png"]
+ Landing page introducing Ant Tact Meter.
 
-![Screenshot2](screenshot2.png) Add caption explaining what this shows
+!["C:\Users\ASUS\Pictures\Screenshots\choose_options.png"]
+  Users select the analysis feature they want to perform.
 
-![Screenshot3](screenshot3.png) Add caption explaining what this shows
+!["C:\Users\ASUS\Pictures\Screenshots\upload_ants_files.png"]
+  Users upload images or videos of ants for analysis.
+
+!["C:\Users\ASUS\Pictures\Screenshots\ant_counter_page.png"]
+  Displays the results, including ant count, funny summaries, and charts.
 
 
-Project Demo
-Video
-"C:\AYSHAS STUFFS\PROJECTS\a1\ant-tact.mp4" Explain what the video demonstrates
+### Project Demo
+# Video
+!["C:\AYSHAS STUFFS\PROJECTS\a1\ant-tact.mp4"]
+The demo shows how a user interacts with Ant Tact Meter: starting from the landing page, selecting an analysis feature, uploading an image or video of ants, and finally viewing the results. The app automatically counts the ants, provides a fun summary of their behavior, and displays charts showing activity or estimated food delivery time.
 
-Team Contributions
-Anjana: Frontend, UI/UX styling
-Aysha Sulthana: AI model integration, JavaScript logic, frontend-backend connection
 
-Made with ❤️ at TinkerHub Useless Projects
+## Team Contributions
+- Anjana: Frontend, UI/UX styling
+- Aysha Sulthana: AI model integration, JavaScript logic, frontend-backend connection
+
+
+
+---
+Made with ❤️ at TinkerHub Useless Projects 
+
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
