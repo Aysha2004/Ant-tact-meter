@@ -48,16 +48,16 @@ For Software:
 
 # Screenshots 
 https://github.com/Aysha2004/Ant-tact-meter/blob/main/starting_page.png
- Landing page introducing Ant Tact Meter.
+- Landing page introducing Ant Tact Meter.
  
-
-  Users select the analysis feature they want to perform.
+https://github.com/Aysha2004/Ant-tact-meter/blob/main/choose_options.png
+ - Users select the analysis feature they want to perform.
 
 https://github.com/Aysha2004/Ant-tact-meter/blob/main/upload_ants_files.png
-  Users upload images or videos of ants for analysis.
+ - Users upload images or videos of ants for analysis.
 
 https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant_counter_page.png
-  Displays the results, including ant count, funny summaries, and charts.
+ - Displays the results, including ant count, funny summaries, and charts.
 
 
 ### Project Demo
@@ -77,6 +77,7 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
 
 
 
