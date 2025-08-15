@@ -35,13 +35,14 @@ Not required — works entirely on any laptop or PC with a browser
 ### Implementation
 For Software:
 # Installation
-# Download or clone the project
-git clone []
+No installation needed-just open in a browser.
+git clone [https://github.com/Aysha2004/Ant-tact-meter]
 cd ant-tact-meter
 
 # Run
 # Open the index.html file in any web browser
-# Or use live-server in VS Code for a local development server
+# Or use live-server in VS Code for a local development server 
+#Or visit : https://aysha2004.github.io/Ant-tact-meter/
 
 ### Project Documentation
 For Software:
