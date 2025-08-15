@@ -52,21 +52,21 @@ For Software:
 
 
 - Users select the analysis feature they want to perform.
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/choose_options.png
+![image](https://github.com/Aysha2004/Ant-tact-meter/blob/main/choose_options.png)
 
  
  - Users upload images or videos of ants for analysis.
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/upload_ants_files.png
+![image](https://github.com/Aysha2004/Ant-tact-meter/blob/main/upload_ants_files.png)
 
 
  - Displays the results, including ant count, funny summaries, and charts.
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant_counter_page.png
+![image](https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant_counter_page.png)
 
 
 
 ### Project Demo
 # Video
-https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant-tact.mp4
+![video](https://github.com/Aysha2004/Ant-tact-meter/blob/main/ant-tact.mp4)
 The demo shows how a user interacts with Ant Tact Meter: starting from the landing page, selecting an analysis feature, uploading an image or video of ants, and finally viewing the results. The app automatically counts the ants, provides a fun summary of their behavior, and displays charts showing activity or estimated food delivery time.
 
 
